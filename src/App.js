@@ -1,4 +1,4 @@
-import '../../front/src/App.css';
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/layout/Header';
@@ -10,21 +10,24 @@ import HomePage from './pages/HomePage';
 import ServiciosPage from './pages/ServiciosPage';
 import NovedadesPage from './pages/NovedadesPage';
 
-function App () {
+function App() {
   return (
-    <div className= "App">
-      <Header/>
+    <div className="App">
+
       <BrowserRouter>
-      <Nav/>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="servicios" element={<ServiciosPage />} />
-        <Route path="novedades" element={<NovedadesPage />} />
-        <Route path="contacto" element={<ContactoPage />} />
-      </Routes>
+        <div className="grupo">
+          <Header />
+          <Nav />
+        </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="servicios" element={<ServiciosPage />} />
+          <Route path="novedades" element={<NovedadesPage />} />
+          <Route path="contacto" element={<ContactoPage />} />
+        </Routes>
       </BrowserRouter>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

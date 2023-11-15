@@ -1,9 +1,11 @@
 import '../styles/components/pages/ContactoPage.css';
 import React from 'react';
 
+
 const ContactoPage = (props) => {
     return (
         <body>
+     
         <div className="fondo-contacto">
         <div className= "header">
             <div className="servicios">
